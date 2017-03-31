@@ -1,0 +1,532 @@
+@charset: "UTF-8";
+
+/* story style */
+
+#story	{
+	color: #0010FF;
+}
+
+#frontpage	{
+	display: none;
+}
+
+#beginning	{
+	float: right;
+	background-color:rgb(204, 16, 190);
+	border: none;
+	font-size: 30px;
+}
+
+/* blur style */
+
+.blur	{
+	filter: blur(20px);
+}
+
+/* timer style */
+
+#time	{
+	display: none;
+	margin-left: 48%;
+}
+
+/* body style */
+
+body {
+	background-color: rgb(204, 16, 190);
+}
+
+/* text style */
+
+#text	{
+	position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: chartreuse;
+}
+
+/* button style */
+
+.button {
+	background-color: #2BD9EA;
+	height: 105px;
+	width: 250px;
+	border-radius: 50px;
+	position: relative;
+	border-bottom-width: thick;
+	margin-top: 50px;
+	left: 23%;
+	top: 120px;
+	border-color: #BFBFBF;
+	border: 1px solid #333333;
+	font-size: 20px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+
+/* button animation */
+
+#animation:hover {
+	animation-name: pulse_animation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+#animation2:hover {
+	animation-name: pulse_animation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes pulse_animation {
+	0% { transform: scale(1.1); left: 23.1%; background-color: #0035FF}
+	50% { transform: scale(1.25); left: 23.35%; background-color:#06FFF8}
+	100% { transform: scale(1.1); left: 23.1%; background-color:#0035FF}
+}
+
+@keyframes new_pulse_animation   {
+	0% { background-color: rgba(191, 191, 191, .7) }
+	50% { background-color: rgba(83, 83, 83, .7) }
+	100% { background-color: rgba(191, 191, 191, .7) }
+}
+
+/* BUTTON MEDIA QUERRIES ----ADAPTING TO DIFFERENT SIZED SCREENS---- */
+
+@media screen and (min-width: 300px)	{
+	.button	{
+		left: 20%;
+		margin-top: 80px;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 20.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 20.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 20.1%; background-color:#0035FF}
+	}
+}
+
+@media screen and (min-width: 450px) {
+	.button	{
+		left: 28%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 30.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 30.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 30.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 620px) {
+	.button	{
+		left: 33%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 33.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 33.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 33.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 880px) {
+	.button	{
+		left: 35%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 35.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 35.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 35.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1000px) {
+	.button	{
+		left: 37%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 37.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 37.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 37.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1100px) {
+	.button	{
+		left: 39%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 39.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 39.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 39.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1200px) {
+	.button	{
+		left: 40%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 40.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 40.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 40.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1300px) {
+	.button	{
+		left: 41%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 41.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 41.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 41.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1500px) {
+	.button	{
+		left: 42%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 42.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 42.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 42.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 1700px) {
+	.button	{
+		left: 43%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 43.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 43.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 43.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 2000px) {
+	.button	{
+		left: 43.5%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 43.7%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 43.85%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 43.6%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 2200px) {
+	.button	{
+		left: 44%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 44.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 44.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 44.1%; background-color:#0035FF}
+	}
+}
+@media screen and (min-width: 2400px) {
+	.button	{
+		left: 45%;
+	}
+	@keyframes pulse_animation {
+		0% { transform: scale(1.1); left: 45.2%; background-color: #0035FF}
+		50% { transform: scale(1.25); left: 45.35%; background-color:#06FFF8}
+		100% { transform: scale(1.1); left: 45.1%; background-color:#0035FF}
+	}
+}
+
+/* OPTIONS PAGE STYLE */
+
+#options	{
+	display: none;
+}
+
+/* TIME */
+
+#timeText	{
+	text-align: center;
+	font-size: 100px;
+}
+
+#thirty, #sixty, #ninety	{
+	background-color: red;
+	border: 1px solid;
+	height: 40px;
+	width: 100%;
+	font-size: 20px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	
+}
+
+#chooseTime	{
+	display: flex;
+	align-items: center;
+}
+
+/* RULES */
+
+#ruleHeading	{
+	text-align: center;
+	font-size: 100px;
+}
+
+#ruleList	{
+	font-size: 35px;
+}
+
+/* BACK BUTTON */
+
+#back	{
+	background-color: rgb(204, 16, 190);
+	border: none;
+	font-size: 40px;
+	height: 50px;
+	margin-top: 10%;
+	
+}
+
+/* MUTE BUTTON */
+
+input#un-mute {
+    display: none;
+}
+
+.unmute img {
+    display: none;
+}
+
+input#un-mute:checked ~ .unmute img {
+    display: initial;
+	float: right;
+	margin-top: -3%;
+	height: 50px;
+	width: 50px;
+}
+
+input#un-mute:checked ~ .mute img {
+    display: none;
+}
+
+/* COUNTDOWN STYLE */
+
+#countdownOne, #countdownTwo, #countdownThree	{
+	font-size: 500px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: #2D00FF;
+	position: absolute;
+	margin-top: -250px;
+	margin-left: 30%;
+	display: none;
+}
+
+/* COUNTDOWN MEDIA QUERRIES  ----ADAPTING TO DIFFERENT SIZED SCREENS---- */
+
+@media screen and (min-width: 550px)	{
+	#countdownOne	{
+		margin-left: 38%;
+	}
+	#countdownThree	{
+		margin-left: 32%;
+	}
+}
+
+@media screen and (min-width: 750px)	{
+	#countdownOne	{
+		margin-left: 40%;
+	}
+	#countdownTwo	{
+		margin-left: 36%;
+	}
+}
+
+@media screen and (min-width: 1000px)	{
+	#countdownOne	{
+		margin-left: 42%;
+	}
+	#countdownTwo	{
+		margin-left: 39%;
+	}
+	#countdownThree	{
+		margin-left: 39%;
+	}
+}
+
+@media screen and (min-width: 1300px)	{
+	#countdownTwo	{
+		margin-left: 40%;
+	}
+	#countdownThree	{
+		margin-left: 40%;
+	}
+}
+
+@media screen and (min-width: 1600px)	{
+	#countdownOne	{
+		margin-left: 45%;
+	}
+	#countdownTwo	{
+		margin-left: 42%;
+	}
+	#countdownThree	{
+		margin-left: 41%;
+	}
+}
+
+@media screen and (min-width: 1800px)	{
+	#countdownTwo	{
+		margin-left: 45%;
+	}
+	#countdownThree	{
+		margin-left: 45%;
+	}
+}
+
+/* COUNTDOWN ANIMATION */
+
+@keyframes countdownThree   {
+	0%	 { transform: scale(0.1) }
+	50%	 { transform: scale(1.0) }
+	100% { transform: scale(0.1) }
+}
+
+@keyframes countdownTwo   {
+	0%	 { transform: scale(0.1) }
+	50%	 { transform: scale(1.0) }
+	100% { transform: scale(0.1) }
+}
+
+@keyframes countdownOne  {
+	0%	 { transform: scale(0.1) }
+	50%	 { transform: scale(1.0) }
+	100% { transform: scale(0.1) }
+}
+
+/* CELL BASE STYLES */
+
+#four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve, #thirteen, #fourteen, #fifteen	{
+	display: none;
+	padding: 350px 30px;
+	height: 100%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -305px;
+}
+
+#four div  {
+	height: 19vw;
+}
+
+#five div   {
+	height: 15vw;
+}
+
+#six div   {
+	height: 12.5vw;
+}
+
+#seven div    {
+	height: 10.8vw;
+}
+
+#eight div    {
+	height: 9.5vw;
+}
+
+#nine div   {
+	height: 8.4vw;
+}
+
+#ten div   {
+	height: 7.4vw;
+}
+
+#eleven div   {
+	height: 6.8vw;
+}
+
+#twelve div   {
+	height: 6.2vw;	
+}
+
+#thirteen div   {
+	height: 5.74vw;
+}
+
+#fourteen div   {
+	height: 5.4vw;
+}
+
+#fifteen div   {
+	height: 5vw;	
+}
+
+/* CELL STYLE MEDIA QUERIES ----ADAPTING TO DIFFERENT SIZED SCREENS---- */	
+
+@media screen and (min-width: 1000px)	{
+	#four	{
+		width: 830px;
+	}
+	#four div   {
+		height: 200px;
+	}
+	#five		{
+		width: 810px;
+	}
+	#five div  {
+		height: 160px;
+	}
+	#six   {
+		width: 800px;
+	}
+	#six div    {
+		height: 130px;
+	}
+	#seven  {
+		width: 800px;
+	}
+	#seven div   {
+		height: 110px;
+	}
+	#eight  {
+		width: 800px;
+	}
+	#eight div   {
+		height: 97px;
+	}
+	#nine   {
+		width: 780px;
+	}
+	#nine div    {
+		height: 84px;
+	}
+	#ten   {
+		width: 780px;
+	}
+	#ten div  {
+		height: 75px;
+	}
+	#eleven   {
+		width: 830px;
+	}
+	#eleven div   {
+		height: 70px;
+	}
+	#twelve   {
+		width: 800px;
+	}
+	#twelve div   {
+		height: 63px;
+	}
+	#thirteen   {
+		width: 827px;
+	}
+	#thirteen div   {
+		height: 60px;
+	}
+	#fourteen		{
+		width: 830px;
+	}
+	#fourteen div   {
+		height: 55px;
+	}
+	#fifteen	{
+		width: 826px;
+	}
+	#fifteen div   {
+		height: 52px;
+	}
+}
